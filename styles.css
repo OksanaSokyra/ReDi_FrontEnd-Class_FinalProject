@@ -49,7 +49,7 @@ body {
 
 /* Making "responsive" topnav*/
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {position:relative;}
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
@@ -84,7 +84,7 @@ body {
     top: 13%;
     left: 50%;
     right: 10%;
-    /*transform: translate(-50%, -50%);*/
+    transform: translate(10%, 10%);
     color: rgb(210, 247, 240);
   }
     
@@ -95,6 +95,7 @@ body {
         color: beige;
         font-size:20px;
         text-align: center;
+        margin: 10%;
         left: 50%;
         right: 50%;
       }
@@ -171,3 +172,56 @@ body {
     background-size: cover;
     position:static;
   }
+
+    /*image styling on privacy.html*/
+    .privacy-image {
+      background-image: url("./images/privacypolicy.avif");
+      background-color:darkgrey;
+      height: 400px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position:static;
+    }
+     /*image styling on beactive.html*/
+  .beactive-image {
+    background-image: url("./images/whatisyourstory.avif");
+    background-color:darkgrey;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:static;
+  }
+     /*image styling on news.html*/
+     .news-image {
+      background-image: url("./images/news.jpg");
+      background-color:darkgrey;
+      height: 400px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position:static;
+    }
+     /*image styling on ourinitiatives.html*/
+     .initiatives-image {
+      background-image: url("./images/thankyou.avif");
+      background-color:darkgrey;
+      height: 400px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position:static;
+    }
+ 
+    /*image styling on about.html*/
+  .about-image {
+    background-image: url("./images/heroes2.avif");
+    background-color:darkgrey;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:static;
+  }
+  
