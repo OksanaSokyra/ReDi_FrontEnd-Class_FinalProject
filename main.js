@@ -7,3 +7,17 @@ function myFunction() {
       x.className = "topnav";
     }
   } 
+
+ /*Funktion for home page -> play - stop the video */
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction_playstop() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}

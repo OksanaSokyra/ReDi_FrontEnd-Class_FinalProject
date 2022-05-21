@@ -1,12 +1,12 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(27, 195, 247);
+    background-color: lightgray;
   }
 
   /* Adding a background color to the top navigation */
 .topnav {
-  background-color: rgb(27, 195, 247);
+  background-color: black;
   overflow: hidden;
 }
 
@@ -29,7 +29,7 @@ body {
 
 /* Adding an active class to highlight the current page */
 .topnav a.active {
-  background-color: #05475c;
+  background-color: #666b6d;
   color: white;
 }
 
@@ -64,7 +64,7 @@ body {
 /* Creating a right-aligned link inside the navigation bar */
 .topnav a.split {
   float: right;
-  background-color: #05475c;
+  background-color: #565858;
   color: white;
 }
   /*images and text styling on index html*/
@@ -91,9 +91,9 @@ body {
   /*linear gradients*/
     .mylineargradient {
         background-image:
-        linear-gradient(to right, rgb(28, 124, 202), rgb(43, 154, 228), rgb(105, 247, 252));
+        linear-gradient(to right, rgb(0, 0, 0), rgb(25, 27, 27), rgb(72, 83, 83));
         color: beige;
-        font-size:20px;
+        font-size:50px;
         text-align: center;
         margin: 10%;
         left: 50%;
@@ -105,7 +105,7 @@ body {
     
       .footer-basic {
         padding:40px 0;
-        background-color:rgb(27, 195, 247);
+        background-color:rgb(0, 0, 0);
         color:white;
       }
       
