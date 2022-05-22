@@ -8,12 +8,110 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 <script src="main.js"></script>
 
-</head>
+<style>
+  body {
+  background-color: dimgray;
+  }
 
+  h1 {
+    text-align: center;
+    font-family: "Calligraffitti";
+    font-size: 50px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+  }
+  
+  .row:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+  
+  html {
+    font-family: "Lucida Sans", sans-serif;
+  }
+  
+  .header {
+    background-color: black;
+    color: #ffffff;
+    padding: 15px;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color:rgb(44, 46, 46);
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+  .menu li:hover {
+    background-color: darkgrey;
+  }
+  
+  .aside {
+    background-color:rgb(42, 44, 44);
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+</style>
+
+</head>
 <body>
 
   <!-- Navigation bar-->
-
 <div class="topnav" id="myTopnav">
     <a class="active" href="index1.html">Home</a>
     <a href="about.html">About</a>
@@ -25,24 +123,47 @@
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
-    
   </div> 
 
-<div class="beactive-image"></div>
-    <h1>How can you help us to inspire the world?
-    <br>You can share a story of a real hero (heroes) from your life with us</h1>
-  
+  <div class="beactive-image"></div>
+
+  <div class="header">
+    <h1>Real Life Heroes</h1>
   </div>
-</div>
-
-<p class="mylineargradient" class="centertext">
-
-  Lorem ipsum dolor sit amet. Ut delectus enim qui minima doloremque rem suscipit dolore ea placeat nulla. Aut illum molestiae ut tenetur recusandae et voluptatum voluptatem non exercitationem magnam et dicta magni id placeat dolores eum neque consequatur. Eum inventore suscipit sit sunt iure quo temporibus velit aut porro assumenda est obcaecati omnis aut aliquid iste.
-  Sed tenetur earum qui harum exercitationem sed dolor sint? Est adipisci autem non doloribus inventore non corrupti sequi vel adipisci galisum eum deleniti Quis et quam suscipit ex deserunt atque. Qui nostrum nobis et ducimus enim et voluptatem eaque et error facere sit quia vitae ea porro modi ut eligendi harum.
-  Et reiciendis eveniet est delectus corporis et beatae reiciendis. Eum unde ipsam voluptatibus facere est quae sequi eum quos quos ab sunt tenetur? Ex odit molestias aut officiis harum quo accusamus voluptas est quibusdam nesciunt et tempora officia ab ratione odio!
-
-</p>
-
+  
+  <div class="row">
+    <div class="col-3 col-s-3 menu">
+      <ul>
+        <li>Firefighters</li>
+        <li>Doctors</li>
+        <li>Paramedics</li>
+        <li>Teachers</li>
+        <li>Police Officers</li>
+        <li>Lifeguards</li>
+        <li>Military</li>
+        <li>Volunteers</li>
+        <li>More</li>
+      </ul>
+    </div>
+  
+    <div class="col-6 col-s-9">
+      <h1>Be active</h1>
+      <p style="color:azure; font-size:20px; text-align:center">We are the group of initiative young people from acrose the globe, who are willing to express our gratitude to those, whose work helps to save people lives. <br> Help us to promote this project and real heroes!</p>
+      <video width="400" controls>
+        <source src="./images/fire1.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+  
+    <div class="col-3 col-s-12">
+      <div class="aside">
+        <h2>How can you help us to inspire the world?</h2>
+        <p>You can share a story of a real hero (heroes) from your life with us</p>
+        <h2>Is it all?</h2>
+        <p>You can also promote our project, so the larger audience will see it</p>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer-->
   <div class="footer-basic">

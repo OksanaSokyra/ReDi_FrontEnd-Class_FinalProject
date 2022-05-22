@@ -13,6 +13,21 @@ body {
   font-family: Arial;
   font-size: 17px;
   padding: 8px;
+  background-color:rgb(44, 46, 46);
+}
+
+h2 {
+  color: #f2f2f2;
+  font-size: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+p {
+color: beige;
+font-size: 20px;
+text-align: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 * {
@@ -75,7 +90,7 @@ label {
 }
 
 .btn {
-  background-color: rgb(27, 195, 247);
+  background-color: rgb(120, 122, 122);
   color: white;
   padding: 12px;
   margin: 10px 0;
@@ -87,11 +102,11 @@ label {
 }
 
 .btn:hover {
-  background-color: rgb(27, 31, 247);
+  background-color: rgb(73, 73, 75);
 }
 
 a {
-  color: #2196F3;
+  color: #3a3c3d;
 }
 
 hr {
@@ -126,15 +141,13 @@ span.price {
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
-    
   </div> 
 
 <div class="donate-image">
   </div>
-</div>
 
 <h2>Help us to say thank you to those who deserves it</h2>
-<p>If you like our project and want to support it, you are welcome to donate.</p>
+<p>You are welcome to help our project by donating a little amount:</p>
 <div class="row">
   <div class="col-75">
     <div class="container">
@@ -148,7 +161,7 @@ span.price {
             <label for="email"><i class="fa fa-envelope"></i> Email</label>
             <input type="text" id="email" name="email" placeholder="john@example.com">
             <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <input type="text" id="adr" name="address" placeholder="Bayern Str.1">
             <label for="city"><i class="fa fa-institution"></i> City</label>
             <input type="text" id="city" name="city" placeholder="Munich">
 
@@ -164,8 +177,9 @@ span.price {
             </div>
           </div>
 
+          <!-- Credit Card donation -->
           <div class="col-50">
-            <h3>Payment</h3>
+            <h3>Donation per Credit Card</h3>
             <label for="fname">Accepted Cards</label>
             <div class="icon-container">
               <i class="fa fa-cc-visa" style="color:navy;"></i>
@@ -188,24 +202,41 @@ span.price {
                 <label for="cvv">CVV</label>
                 <input type="text" id="cvv" name="cvv" placeholder="123">
               </div>
+              <div class="col-50">
+                <label for="amount">Amount</label>
+                <input type="text" id="amount" name="Amount" placeholder="10 €">
+              </div>
             </div>
           </div>
           
         </div>
         <label>
-          <input type="checkbox" checked="checked" name="sameadr"> Get a proof-bill
+          <input type="checkbox" checked="checked" name="sameadr"> Get a tax-bill
         </label>
         <input type="submit" value="Donate" class="btn">
       </form>
-    </div>
   </div>
+</div>
+<!-- PayPal Donation -->
   <div class="col-25">
     <div class="container">
-      <h4>How much are you willing to donate: </h4>
-      <p><a href="#">donate 5 EUR</a></p>
-      <p><a href="#">donate 10 EUR</a></p>
-      <p><a href="#">donate 20 EUR</a></p>
-      <p><a href="#">donate 50 EUR</a></p>
+      <h4>Donation per PayPal </h4>
+      <ps><a href="https://www.paypal.com/donate">donate 5 EUR</a></ps>
+      <p><a href="https://www.paypal.com/donate">donate 10 EUR</a></p>
+      <p><a href="https://www.paypal.com/donate">donate 20 EUR</a></p>
+      <p><a href="https://www.paypal.com/donate">donate 50 EUR</a></p>
+      <form action="https://www.paypal.com/donate" method="post" target="_top">
+        <!-- Identifyng for reseving the donation  -->
+        <input type="hidden" name="business" value="donations@fake.com">
+        <!-- Specify details about the contribution -->
+        <input type="hidden" name="no_recurring" value="0">
+        <input type="hidden" name="item_name" value="Friends of the Project">
+        <input type="hidden" name="item_number" value="Real life heroues">
+        <input type="hidden" name="currency_code" value="EUR">
+        <!-- Display the donation button. -->
+        <input type="image" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donate other amount">
+        <img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+       </form>
     </div>
   </div>
 </div>

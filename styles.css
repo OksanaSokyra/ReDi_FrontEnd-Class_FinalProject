@@ -1,9 +1,14 @@
+/* General styling */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: lightgray;
+    background-color: rgb(56, 55, 55);
   }
 
+  h1 {
+    margin: 30px;
+    color: white;
+  }
   /* Adding a background color to the top navigation */
 .topnav {
   background-color: black;
@@ -61,13 +66,13 @@ body {
     text-align: center;
   }
 } 
-/* Creating a right-aligned link inside the navigation bar */
+/* Creating a right-aligned link inside the navigation bar 
 .topnav a.split {
   float: right;
   background-color: #565858;
   color: white;
-}
-  /*images and text styling on index html*/
+}*/
+  /*images and text styling on index html
   .story-image {
     background-image: url("./images/lifeguard.jpg");
     background-color:darkgrey;
@@ -86,16 +91,22 @@ body {
     right: 10%;
     transform: translate(10%, 10%);
     color: rgb(210, 247, 240);
-  }
+  }*/
     
   /*linear gradients*/
     .mylineargradient {
         background-image:
         linear-gradient(to right, rgb(0, 0, 0), rgb(25, 27, 27), rgb(72, 83, 83));
         color: beige;
-        font-size:50px;
+        font-size:20px;
         text-align: center;
-        margin: 10%;
+        top: 13%;
+        left: 50%;
+        right: 10%;
+        margin-top: 0%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 10%;
         left: 50%;
         right: 50%;
       }
@@ -164,7 +175,7 @@ body {
       
         /*styling "donate.html"*/
   .donate-image {
-    background-image: url("./images/donate.jpg");
+    background-image: url("./images/donate2.jpg");
     background-color:darkgrey;
     height: 500px;
     background-position: center;
@@ -185,7 +196,7 @@ body {
     }
      /*image styling on beactive.html*/
   .beactive-image {
-    background-image: url("./images/whatisyourstory.avif");
+    background-image: url("./images/greatthings.jpg");
     background-color:darkgrey;
     height: 400px;
     background-position: center;
@@ -195,7 +206,7 @@ body {
   }
      /*image styling on news.html*/
      .news-image {
-      background-image: url("./images/news.jpg");
+      background-image: url("./images/glogusurban.avif");
       background-color:darkgrey;
       height: 400px;
       background-position: center;
@@ -217,6 +228,17 @@ body {
     /*image styling on about.html*/
   .about-image {
     background-image: url("./images/heroes2.avif");
+    background-color:darkgrey;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:static;
+  }
+
+  /*image styling on contact.html*/
+  .contact-image {
+    background-image: url("./images/contact.jpg");
     background-color:darkgrey;
     height: 400px;
     background-position: center;
