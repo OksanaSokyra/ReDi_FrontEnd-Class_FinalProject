@@ -8,7 +8,7 @@ function myFunction() {
     }
   } 
 
- /*Funktion for home page -> play - stop the video */
+ /*Funktion for home page -> play - stop the video 
 var video = document.getElementById("myVideo");
 var btn = document.getElementById("myBtn");
 
@@ -20,4 +20,13 @@ function myFunction_playstop() {
     video.pause();
     btn.innerHTML = "Play";
   }
+}*/
+
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
 }

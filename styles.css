@@ -8,7 +8,19 @@ body {
   h1 {
     margin: 30px;
     color: white;
+    text-align: center;
+    font-family: "Calligraffitti";
+    font-size: 50px;
   }
+
+  p {
+    margin: 30px;
+    color: white;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+  }
+
   /* Adding a background color to the top navigation */
 .topnav {
   background-color: black;
@@ -66,32 +78,6 @@ body {
     text-align: center;
   }
 } 
-/* Creating a right-aligned link inside the navigation bar 
-.topnav a.split {
-  float: right;
-  background-color: #565858;
-  color: white;
-}*/
-  /*images and text styling on index html
-  .story-image {
-    background-image: url("./images/lifeguard.jpg");
-    background-color:darkgrey;
-    height: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position:static;
-  }
-  
-  .story-text {
-    text-align: right;
-    position: absolute;
-    top: 13%;
-    left: 50%;
-    right: 10%;
-    transform: translate(10%, 10%);
-    color: rgb(210, 247, 240);
-  }*/
     
   /*linear gradients*/
     .mylineargradient {
@@ -104,16 +90,15 @@ body {
         left: 50%;
         right: 10%;
         margin-top: 0%;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 10%;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 2%;
         left: 50%;
         right: 50%;
       }
 
 
       /*styling footer*/
-    
       .footer-basic {
         padding:40px 0;
         background-color:rgb(0, 0, 0);
@@ -169,11 +154,12 @@ body {
         margin-top:15px;
         text-align:center;
         font-size:16px;
-        color:black;
+        color:rgba(255, 255, 255, 0.89);
         margin-bottom:0;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       }
-      
-        /*styling "donate.html"*/
+
+        /*styling image on "donate.html"*/
   .donate-image {
     background-image: url("./images/donate2.jpg");
     background-color:darkgrey;
@@ -216,7 +202,7 @@ body {
     }
      /*image styling on ourinitiatives.html*/
      .initiatives-image {
-      background-image: url("./images/thankyou.avif");
+      background-image: url("./images/goforit.jpg");
       background-color:darkgrey;
       height: 400px;
       background-position: center;
@@ -247,3 +233,38 @@ body {
     position:static;
   }
   
+  /*styling grid on news.html*/
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* The grid: Three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .containerTab {
+    padding: 20px;
+    color: white;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Closable button inside the container tab */
+  .closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
