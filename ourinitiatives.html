@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-<script src="main.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="http://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <script src="main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 
+<!-- Special styling-->
 <style>
   * {
     box-sizing: border-box;
@@ -18,7 +23,6 @@
     float: left;
     width: 25%;
     padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
   }
   
   /* Clear floats after the columns */
@@ -33,14 +37,19 @@
     width: 100%;
   }
 } 
-  </style>
 
+  h2 {
+    color:cadetblue;
+  }
+
+  p {
+    color: cadetblue;
+  }
+  </style>
 </head>
 
 <body>
-
   <!-- Navigation bar-->
-
 <div class="topnav" id="myTopnav">
     <a class="active" href="index1.html">Home</a>
     <a href="about.html">About</a>
@@ -52,9 +61,9 @@
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
-    
   </div> 
 
+  <!-- Image + Content-->
 <div class="initiatives-image"></div>
     <h1>Take a look on our main initiatives:</h1>
   </div>
@@ -77,7 +86,7 @@
     <p>Lorem ipsum dolor sit amet. Ut delectus enim qui minima doloremque rem suscipit dolore ea placeat nulla.</p>
   </div>
   <div class="column" style="background-color:#ddd;">
-    <h2>Crete a video</h2>
+    <h2>Create a video</h2>
     <p>Lorem ipsum dolor sit amet. Ut delectus enim qui minima doloremque rem suscipit dolore ea placeat nulla.</p>
   </div>
 </div>
@@ -96,8 +105,5 @@
         <p class="copyright">Oksana Sokyra © 2022</p>
     </footer>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>

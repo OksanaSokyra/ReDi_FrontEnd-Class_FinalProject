@@ -8,20 +8,7 @@ function myFunction() {
     }
   } 
 
- /*Funktion for home page -> play - stop the video 
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
-
-function myFunction_playstop() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
-}*/
-
+ /* function on the news page - click on the column */ 
 function openTab(tabName) {
   var i, x;
   x = document.getElementsByClassName("containerTab");

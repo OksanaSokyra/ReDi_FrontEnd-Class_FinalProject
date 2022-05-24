@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 
+<!--links to external files, stylesheets and js-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -9,15 +10,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 <script src="main.js"></script>
 
+<!--special styling (not in style.css)-->
 <style>
 * {
   box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial;
-  font-size: 17px;
 }
 
 #myVideo {
@@ -41,25 +37,11 @@ body {
   width: 100%;
   padding: 20px;
 }
-
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: darkgray;
-  color: #fff;
-  cursor: pointer;
-}
-
-#myBtn:hover {
-  background: #ddd;
-  color: grey;
-}
 </style>
 </head>
-<body>
 
+<!--video adding, content + nav.bar-->
+<body>
 <video autoplay muted loop id="myVideo">
   <source src="./images/doctor1.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
@@ -68,11 +50,10 @@ body {
 <div class="content">
   <h1>Real Life Heroes</h1>
   <p>We are living in the world where every day regularly persons are doing unregularly things.
-    We designed this project to give you the opportunity to express your gratitude to the hero(es) from real life and help them to realise that their work are appreciated.
+    We designed this project to give you the opportunity to express your gratitude to the hero(es) from real life and help them to realize that their work is appreciated.
     Check out our initiatives, and be part of our project.</p>
-     <!--<button id="myBtn" onclick="myFunction_playstop()">Pause</button>-->
     
-    <!-- Navigation bar-->
+    <!-- Navigation bar: in this case it is not topnav, but I have leave the general form for navigation.-->
     <div class="topnav" id="myTopnav">
         <a class="active" href="index.html">Home</a>
         <a href="about.html">About</a>
